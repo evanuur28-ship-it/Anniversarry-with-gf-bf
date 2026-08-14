@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff6f91">
+  <title>Our Love Story — Anniversary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" class="loader"><div class="loader-heart">♥</div><p>Menyiapkan cerita kita...</p></div>
+  <div class="hearts" id="hearts"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home">Our<span>Love</span></a>
+    <button class="music-btn" id="musicBtn" aria-label="Putar musik">♫ <span>Music</span></button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">A LITTLE WEBSITE FOR</p>
+        <h1 id="heroNames">Nama Kamu & Nama Pasangan</h1>
+        <p class="hero-sub" id="heroMessage">Satu cerita, dua hati, dan banyak kenangan yang ingin terus kita simpan.</p>
+        <a class="btn" href="#story">Buka Cerita Kita <span>↓</span></a>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="photo-frame"><img id="heroImage" src="assets/images/hero.jpg" alt="Foto pasangan"></div>
+        <span class="floating-note">♥ forever</span>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">OUR LITTLE UNIVERSE</p>
+        <h2>Karena setiap hubungan<br><em>punya ceritanya sendiri.</em></h2>
+      </div>
+      <div class="intro-grid">
+        <div class="quote-card reveal"><span>“</span><p id="quoteText">Kalau boleh memilih lagi, aku tetap akan memilih kamu.</p><small id="quoteAuthor">— Untukmu, selalu</small></div>
+        <div class="text-card reveal"><p id="introText">Terima kasih sudah menjadi rumah di hari-hari yang melelahkan, menjadi alasan untuk tersenyum, dan menjadi bagian paling indah dari perjalanan ini.</p></div>
+      </div>
+    </section>
+
+    <section class="counter section" id="counter">
+      <div class="section-heading reveal"><p class="eyebrow">TIME FLIES</p><h2>Sudah sejauh ini <em>kita.</em></h2></div>
+      <div class="counter-grid reveal">
+        <div><strong id="days">0</strong><span>Hari</span></div>
+        <div><strong id="hours">0</strong><span>Jam</span></div>
+        <div><strong id="minutes">0</strong><span>Menit</span></div>
+        <div><strong id="seconds">0</strong><span>Detik</span></div>
+      </div>
+      <p class="counter-note">Sejak <b id="startDateText">17 Agustus 2024</b>, dan semoga terus bertambah.</p>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="section-heading reveal"><p class="eyebrow">OUR STORY</p><h2>Dari “hai” menjadi<br><em>“selamanya”.</em></h2></div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="section-heading reveal"><p class="eyebrow">MEMORIES</p><h2>Potongan kecil dari<br><em>cerita besar kita.</em></h2></div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <section class="reasons section">
+      <div class="section-heading reveal"><p class="eyebrow">WHY YOU</p><h2>Alasan kenapa aku<br><em>jatuh cinta.</em></h2></div>
+      <div class="reason-grid" id="reasonGrid"></div>
+    </section>
+
+    <section class="letter section">
+      <div class="letter-wrap reveal">
+        <p class="eyebrow">A LETTER FOR YOU</p>
+        <h2>Untuk orang<br>favoritku.</h2>
+        <div class="paper"><p id="letterText"></p><div class="signature" id="signature">Dengan cinta, Nama Kamu ♥</div></div>
+      </div>
+    </section>
+
+    <section class="favorites section">
+      <div class="section-heading reveal"><p class="eyebrow">OUR FAVORITES</p><h2>Hal-hal kecil yang<br><em>mengingatkanku padamu.</em></h2></div>
+      <div class="favorite-grid" id="favoriteGrid"></div>
+    </section>
+
+    <section class="bucket section">
+      <div class="section-heading reveal"><p class="eyebrow">NEXT CHAPTER</p><h2>Hal-hal yang ingin<br><em>kita lakukan bersama.</em></h2></div>
+      <div class="bucket-list" id="bucketList"></div>
+    </section>
+
+    <section class="final section">
+      <div class="final-content reveal">
+        <div class="big-heart">♥</div>
+        <p class="eyebrow">HAPPY ANNIVERSARY</p>
+        <h2 id="finalTitle">Terima kasih sudah<br><em>memilihku.</em></h2>
+        <p id="finalMessage">Semoga setelah hari ini masih ada ribuan hari lain yang bisa kita rayakan bersama.</p>
+        <button class="btn" id="replayBtn">Putar Ulang Cerita ♥</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox"><button id="closeLightbox">×</button><img id="lightboxImg" src="" alt="Memory"></div>
+  <audio id="bgMusic" loop preload="none"><source src="assets/audio/music.mp3" type="audio/mpeg"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
